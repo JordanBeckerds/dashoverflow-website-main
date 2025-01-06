@@ -1,0 +1,122 @@
+#projects-samples {
+    background-color: var(--dark-bg);
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    height: 130vh;
+}
+
+#projects-samples::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    height: 130vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+}
+
+#projects-samples::after {
+    content: "";
+    z-index: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    backdrop-filter: grayscale(0.2);
+    position: absolute;
+    height: 130vh;
+    width: 100vw;
+}
+
+#projects-samples h3 {
+    z-index: 2;
+    font-family: Mainfont, sans-serif;
+    font-weight: 800;
+    font-size: var(--text-ttl);
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+    margin: 0;
+    background-clip: text;
+    letter-spacing: 8px;
+    color: var(--main-text-color);
+}
+
+#project-samples-logo {
+    font-family: DashCreator;
+    letter-spacing: 0;
+    background: url("/res/img/bg/white-pattern.webp");
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: calc(var(--text-ttl) * 0.9);
+}
+
+.scroller-container {
+    display: grid;
+
+    grid-template-rows: 25vh;
+    grid-template-columns: 25vw 25vw;
+
+    gap: 2em;
+    margin: 0 auto;
+    justify-content: center;
+    z-index: 2;
+}
+
+.scroller-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 50vw;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    border-radius: 0;
+
+}
+
+.scroller-item p {
+    font-family: Mainfont;
+    font-size: var(--text-s);
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    color: #fff;
+}
+
+.scroller-item:hover {
+    filter: grayscale(0);
+    border-radius: 3%;
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.scroller-seemore {
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-text-color);
+    z-index: 2;
+    font-family: Mainfont;
+    font-size: var(--text-m);
+}
+
+.scroller-seemore:hover {
+    color: var(--hover-color);
+}
+
+
+/*  BACKGROUND-CONFIG   */
+
+#scroller01 {
+    background-image: url("/res/img/scroller/1.png");
+}
+
+#scroller02 {
+    background-image: url("/res/img/scroller/2.png");
+    background-position: center;
+}
