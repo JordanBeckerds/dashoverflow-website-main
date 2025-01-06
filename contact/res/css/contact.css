@@ -1,0 +1,44 @@
+#main-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+#main-sec h1 {
+    font-family: Mainfont;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: var(--text-ttl);
+    color: #fff;
+    text-align: center;
+}
+.contact-options {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: fit-content;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-options .option {
+    display: flex;
+    flex-direction: column;
+    max-width: 20vw;
+    font-family: Mainfont;
+    font-size: 1em;
+    padding: 1em;
+    color: #fff;
+}
+.img-icon img {
+    width: 5vw;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(99%) saturate(20%) hue-rotate(79deg) brightness(105%) contrast(100%);
+}
+.img-icon {
+    margin: 0 auto;
+}
+.img-icon:hover img {
+    transform: scale(1.5);
+}
