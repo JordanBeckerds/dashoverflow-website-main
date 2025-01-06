@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/res/img/favicon/apple-touch-icon.png">
+    <meta name="title" content="Créations DashOverflow - Agence WebDesign basée à la réunion, Développement de sites internet, Marketing Digital, SEO.">
+    <meta name="description" content="Découvrez nos créations made in 974. Le prestige du WebDesign.">
+    <meta name="keywords" content="SEO, Site, Web, Agence, Réunion, 974, Dash, Oveflow, DashOverflow, Webapp">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="180">
+    <meta property="og:image:height" content="180">
+    <meta property="og:description" content="Découvrez nos créations made in 974. Le prestige du WebDesign.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/res/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/res/site.webmanifest">    
+    <link rel="stylesheet" href="/res/css/cursor.css">
+    <link rel="stylesheet" href="/res/css/header-footer.css">
+    <link rel="stylesheet" href="/res/css/main.css">
+    <link rel="stylesheet" href="./res/css/creations.css">
+
+    <link rel="stylesheet" href="https://dashoverflow.fr/res/css/responsive.css">
+    <title>Créations DashOverflow - Agence WebDesign basée à la réunion, Développement de sites internet, Marketing Digital, SEO.</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLSX72VT');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div class="content-holder">
+
+
+        <div id="glitchloader">
+            <div class="commandline">
+                <p>&gt;</p>
+                <div class="commands">
+                    <span id="commandText">EXECUTE DASHOVERFLOW</span>
+                </div>
+            </div>        
+        <div id="cursor">
+        <div class="cursor__circle"></div>
+        </div>
+        <header class="mate-header" id="main-header">
+            <div class="header-stack">
+                <a href="../" class="mate-logo .white-filter"><img src="/res/img/favicon/android-chrome-512x512.png" alt="Logo-DashOverflow"></a>
+                <nav class="mate-header-links" role="navigation">
+                    <a href="#" class="mate-header-link" cursor-class="button"><i class="fa-solid fa-store"></i> Nos Creations</a>
+                    <a href="https://create.dashoverflow.fr" class="mate-header-link" cursor-class="button"><i class="fa-solid fa-pen-ruler"></i> Je commence mon projet</a>
+                </nav>
+                <img id="pause" onclick="toggleAudio()" src="/res/img/sound-off.png" class="img-fluid" alt="Responsive image" cursor-class="button"><audio id='player' src='/res/music/C1W-Driver-Seat.mp3'></audio><img id="play" onclick="toggleAudio()" src="/res/img/sound-on.png" class="img-fluid" alt="Responsive image" cursor-class="button">
+            </div>
+        </header>
+
+        <main id="main-sec">
+
+            <div class="creation" id="div1">
+            </div>
+            <div class="creation" id="div2">
+            </div>
+            <div class="creation" id="div3">
+            </div>
+            <div class="creation" id="div4">
+            </div>
+            <div class="creation" id="div5">
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="main-footer">
+                <div class="footer-row">
+                    <div class="footer-row-item">
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-people-group"></i>  NOTRE EQUIPE</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-row-item">
+                        <ul>
+                            <li><a href="https://create.dashoverflow.fr"><i class="fa-solid fa-file-circle-plus"></i>  AVOIR UN DEVIS</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-row-item">
+                        <ul>
+                            <li><a href="https://create.dashoverflow.fr"><i class="fa-solid fa-paper-plane"></i>  CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://instagram.com/dashoverflow" target="_blank"><img src="/res/img/footer/instagram.png" alt="instagram"></a>
+                    <a href="https://twitter.com/dashoverflow" target="_blank"><img src="/res/img/footer/x.png" alt="x"></a>
+                </div>
+
+                <p class="copyright">DashOverflow © 2024</p>
+                <div class="separator-small"></div>
+                <div class="legal">
+                    <a href="/legal/">Mentions légales</a>
+                    <span>|</span>
+                    <a href="/privacypolicy/">Politique de confidentialité</a>
+                    <span>|</span>
+                    <a href="/cookiespolicy/">Politique de cookies</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const divs = document.querySelectorAll('.creation');
+            let currentIndex = 0;
+        
+            function toggleActiveClass() {
+                divs.forEach(div => div.classList.remove('active'));
+                divs[currentIndex].classList.add('active');
+                currentIndex = (currentIndex + 1) % divs.length;
+            }
+        
+            setInterval(toggleActiveClass, 1500); // Change background every 2 seconds
+        });
+        </script>
+    <script src="./res/js/custom-cursor.js"></script>
+    <script src="./res/js/preloader.js"></script>
+    <script src="./res/js/header.js"></script>
+</body>
+</html>
