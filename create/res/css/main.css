@@ -1,0 +1,123 @@
+/* GENERAL STUFF */
+.pink-filter {
+  filter: invert(65%) sepia(61%) saturate(6414%) hue-rotate(308deg) brightness(101%) contrast(101%);
+}
+.white-filter {
+  filter: invert(100%) sepia(0%) saturate(5066%) hue-rotate(8deg) brightness(122%) contrast(100%);
+}
+
+@font-face {
+  font-family: DashFont;
+  src: url("/res/fonts/main-font.ttf");
+}
+@font-face {
+font-family: Mainfont;
+src: url("/res/fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: DashCreator;
+  src: url("/res/fonts/DashCreator.otf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Gereral Config */
+
+:root {
+
+/*  Colors  */
+
+  --main-text-color: #dbdbdb;
+  --hover-color: #ff4c97;
+  --active-text-color: #ac0081dc;
+  --dark-bg: #000;
+
+
+/*  Sizes */
+
+  /* FONT-SIZES */
+
+  --text-ttl: 8rem;
+  --text-subtl: 4rem;
+  --text-xl: 3rem;
+  --text-l: 2.5rem;
+  --text-m: 2rem;
+  --text-s: 1.5rem;
+  --text-xs: 1rem;
+
+  --header-size: 6vh;
+  --header-buttons-size: 50%;
+
+  --section-size: 100vh;
+
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  background-color: #000;
+}
+
+.termsfeed-com---pc-overlay {
+  z-index: 998!important;
+}
+.termsfeed-com---nb {
+  z-index: 998!important;
+}
+.dash-font {
+  font-family: DashFont;
+}
+.main-font {
+  font-family: Mainfont;
+}
+.third-font {
+font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.content-holder {
+  padding: 0;
+}
+.content-holder-center {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+}
+.base-section {
+  height: var(--section-size);
+  padding: 0;
+  margin: 0;
+}
+.title-section {
+  height: calc(var(--section-size) - var(--header-size));
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.bg-dark {
+  background-color: rgb(56, 56, 56);
+  color: var(--main-text-color);
+}
+
+
+
+
+/* PRELOADER */
+
+#preloader {
+  background: #000 url(/res/img/bg/preloader.gif);
+  background-position: center center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  top: 0;
+  position: fixed;
+  display: flex;
+}
